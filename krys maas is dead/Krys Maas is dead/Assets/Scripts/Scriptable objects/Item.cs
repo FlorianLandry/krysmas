@@ -7,4 +7,5 @@ public class Item : ScriptableObject
     public Sprite icon = null;
     public bool isDefaultItem = false;
     public string type = null;
+    public float coldMultiplier = 1f;
 }
