@@ -21,8 +21,10 @@ public class EquipPants : MonoBehaviour
         }
 
         Item tmpHat = equipedPants.item;
+        GameObject.Find(equipedPants.item.name).GetComponent<Renderer>().enabled = false;
         equipedPants.clearSlot();
         equipedPants.addItem(pantsToEquip.item);
+        GameObject.Find(equipedPants.item.name).GetComponent<Renderer>().enabled = true;
         pantsToEquip.clearSlot();
         pantsToEquip.addItem(tmpHat);
     }

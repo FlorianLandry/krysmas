@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55bf80d3c0d64ae45a5f513be4b77486, type: 3}
-  m_Name: Default pants
+  m_Name: VesteHiver
   m_EditorClassIdentifier: 
-  itemName: Default pants
-  icon: {fileID: 21300000, guid: c985c934bd16e4f4386def844aa41f79, type: 3}
-  isDefaultItem: 1
-  type: pants
+  itemName: VesteHiver
+  icon: {fileID: 21300000, guid: 7c26b8a491c35304abb557aeea814546, type: 3}
+  isDefaultItem: 0
+  type: jacket
+  coldMultiplier: 0.3

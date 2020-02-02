@@ -22,9 +22,11 @@ public class PlayerController : MonoBehaviour
         RaycastHit hit;
         if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, range))
         {
+            Debug.Log("Hit !");
             Interactable interactable = hit.transform.GetComponent<Interactable>();
             if(interactable != null)
             {
+                Debug.Log("Focus !");
                 setFocus(interactable);
             }
         }
@@ -39,7 +41,8 @@ public class PlayerController : MonoBehaviour
             {
                 focus.onDefocused(transform);
             }
-            
+
+            Debug.Log("focus focus !");
             focus = newFocus;
         }
         

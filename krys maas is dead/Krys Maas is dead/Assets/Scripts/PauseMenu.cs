@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
 {
     public bool gameIsPaused = false;
     public GameObject pauseMenuUI;
+    public ThirdPersonCamera cam;
 
     // Start is called before the first frame update
     void Start()
@@ -51,6 +52,9 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         gameIsPaused = false;
         Camera.main.GetComponent<ThirdPersonCamera>().setActive(true);
+        cam.lockCursor = false;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 

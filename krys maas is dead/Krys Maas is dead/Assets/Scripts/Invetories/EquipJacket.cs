@@ -21,8 +21,10 @@ public class EquipJacket : MonoBehaviour
         }
 
         Item tmpHat = equipedJacket.item;
+        GameObject.Find(equipedJacket.item.name).GetComponent<Renderer>().enabled = false;
         equipedJacket.clearSlot();
         equipedJacket.addItem(jacketToEquip.item);
+        GameObject.Find(equipedJacket.item.name).GetComponent<Renderer>().enabled = true;
         jacketToEquip.clearSlot();
         jacketToEquip.addItem(tmpHat);
     }

@@ -11,6 +11,7 @@ public class Cold : MonoBehaviour
     public HatsSlot equipedHat;
     public JacketsSlot equipedJacket;
     public PantsSlot equipedPants;
+    public ThirdPersonCamera cam;
 
     // Update is called once per frame
     void Update()
@@ -24,6 +25,9 @@ public class Cold : MonoBehaviour
             coldBar.value += (Time.deltaTime / 10) * equipedJacket.item.coldMultiplier * equipedHat.item.coldMultiplier * equipedPants.item.coldMultiplier;
             if (coldBar.value >= 1)
             {
+                cam.lockCursor = false;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
             }
         }

@@ -17,7 +17,7 @@ public class Interactable : MonoBehaviour
 
     public void Start()
     {
-        pc = GameObject.Find("Joueur").GetComponent<PlayerController>();
+        pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
     private void Update()

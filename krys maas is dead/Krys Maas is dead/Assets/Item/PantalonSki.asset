@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55bf80d3c0d64ae45a5f513be4b77486, type: 3}
-  m_Name: Warm jacket
+  m_Name: PantalonSki
   m_EditorClassIdentifier: 
-  itemName: Warm jacket
-  icon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+  itemName: PantalonSki
+  icon: {fileID: 21300000, guid: 44862d790a07d5b4daf4d9fd7e44c55d, type: 3}
   isDefaultItem: 0
-  type: jacket
-  coldMultiplier: 0.5
+  type: pants
+  coldMultiplier: 0.7
