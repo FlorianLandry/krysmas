@@ -5,6 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject mainMenu;
+    public GameObject secondMenu;
+
+    public void Start()
+    {
+        mainMenu.SetActive(true);
+        secondMenu.SetActive(false);
+    }
+
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -20,5 +29,17 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log("xoxo");
         Application.Quit();
+    }
+
+    public void How2Play()
+    {
+        mainMenu.SetActive(false);
+        secondMenu.SetActive(true);
+    }
+
+    public void Back()
+    {
+        secondMenu.SetActive(false);
+        mainMenu.SetActive(true);
     }
 }
