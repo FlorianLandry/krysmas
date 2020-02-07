@@ -24,6 +24,16 @@ public class EquipPants : MonoBehaviour
         GameObject.Find(equipedPants.item.name).GetComponent<Renderer>().enabled = false;
         equipedPants.clearSlot();
         equipedPants.addItem(pantsToEquip.item);
+        if (equipedPants.item.name != "PantalonDeRando")
+        {
+            GameObject.Find("Jambes").GetComponent<Renderer>().enabled = true;
+            GameObject.Find("Pieds").GetComponent<Renderer>().enabled = true;
+        }
+        else
+        {
+            GameObject.Find("Jambes").GetComponent<Renderer>().enabled = false;
+            GameObject.Find("Pieds").GetComponent<Renderer>().enabled = false;
+        }
         GameObject.Find(equipedPants.item.name).GetComponent<Renderer>().enabled = true;
         pantsToEquip.clearSlot();
         pantsToEquip.addItem(tmpHat);

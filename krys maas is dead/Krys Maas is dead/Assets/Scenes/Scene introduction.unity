@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 112000000, guid: 8eb2421e268eeeb4ca748a73988f69b9,
     type: 2}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -131,6 +131,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 70c6bdac21c615f46b4ef52573989248, type: 3}
       propertyPath: m_Name
       value: Destroy_Pillar_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 70c6bdac21c615f46b4ef52573989248, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 70c6bdac21c615f46b4ef52573989248, type: 3}
       propertyPath: m_LocalPosition.x
@@ -560,6 +564,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e9c50fdf555743b43afa3624a2ff0826, type: 3}
       propertyPath: m_Name
       value: Destroy_Arch_0 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e9c50fdf555743b43afa3624a2ff0826, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e9c50fdf555743b43afa3624a2ff0826, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1012,7 +1020,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 55184099}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Temple en ruine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1477,6 +1485,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e9c50fdf555743b43afa3624a2ff0826, type: 3}
       propertyPath: m_Name
       value: Destroy_Arch_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e9c50fdf555743b43afa3624a2ff0826, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e9c50fdf555743b43afa3624a2ff0826, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2124,20 +2136,25 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 5528511121806472730, guid: 049836bb536c5514984af073279f83e8,
+        type: 3}
+      propertyPath: m_SlopeLimit
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 8487315335839168820, guid: 049836bb536c5514984af073279f83e8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.15
+      value: 16.41
       objectReference: {fileID: 0}
     - target: {fileID: 8487315335839168820, guid: 049836bb536c5514984af073279f83e8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 429.3
+      value: 400.155
       objectReference: {fileID: 0}
     - target: {fileID: 8487315335839168820, guid: 049836bb536c5514984af073279f83e8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 88.1
+      value: 5.13
       objectReference: {fileID: 0}
     - target: {fileID: 8487315335839168820, guid: 049836bb536c5514984af073279f83e8,
         type: 3}
@@ -2575,6 +2592,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block_2
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fcdb08289c08bb845b4dd68935096682, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: fcdb08289c08bb845b4dd68935096682, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.480103
@@ -2982,7 +3003,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4064555647032484, guid: 9293442b452d64a09b2bbd4bd563a965, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -49.690002
+      value: -50.78
       objectReference: {fileID: 0}
     - target: {fileID: 4064555647032484, guid: 9293442b452d64a09b2bbd4bd563a965, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2990,7 +3011,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4064555647032484, guid: 9293442b452d64a09b2bbd4bd563a965, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -17.681
+      value: -20.47
       objectReference: {fileID: 0}
     - target: {fileID: 4064555647032484, guid: 9293442b452d64a09b2bbd4bd563a965, type: 3}
       propertyPath: m_LocalRotation.x
@@ -3494,6 +3515,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroy_Arch_0 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e9c50fdf555743b43afa3624a2ff0826, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e9c50fdf555743b43afa3624a2ff0826, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.592453
@@ -3810,6 +3835,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: bbe1ee0529cf873448761d0b87961dc3, type: 3}
       propertyPath: m_Name
       value: Destroy_Plate_5
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bbe1ee0529cf873448761d0b87961dc3, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bbe1ee0529cf873448761d0b87961dc3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5839,6 +5868,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 78f7fa66b2e66134da5ca5f745579e12, type: 3}
       propertyPath: m_Name
       value: Stone_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 78f7fa66b2e66134da5ca5f745579e12, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 78f7fa66b2e66134da5ca5f745579e12, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9404,6 +9437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroy_Pillar_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 70c6bdac21c615f46b4ef52573989248, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 70c6bdac21c615f46b4ef52573989248, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.653656
@@ -10075,6 +10112,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroy_Arch_0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e9c50fdf555743b43afa3624a2ff0826, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e9c50fdf555743b43afa3624a2ff0826, type: 3}
       propertyPath: m_LocalPosition.x
       value: 19.502457
@@ -10383,6 +10424,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 70c6bdac21c615f46b4ef52573989248, type: 3}
       propertyPath: m_Name
       value: Destroy_Pillar_1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 70c6bdac21c615f46b4ef52573989248, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 70c6bdac21c615f46b4ef52573989248, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10865,6 +10910,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroy_Plate_8
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 002113c2e8c856b45863e62240240370, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 002113c2e8c856b45863e62240240370, type: 3}
       propertyPath: m_LocalPosition.x
       value: 12.972458
@@ -11107,6 +11156,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e9c50fdf555743b43afa3624a2ff0826, type: 3}
       propertyPath: m_Name
       value: Destroy_Arch_0 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e9c50fdf555743b43afa3624a2ff0826, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e9c50fdf555743b43afa3624a2ff0826, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11740,6 +11793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroy_Plate_10
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: d43e63d6b138bbf44b10a184fbd50f2a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d43e63d6b138bbf44b10a184fbd50f2a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.2824554
@@ -11834,6 +11891,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 3bb751338bd6eaf4183126979baaff73, type: 3}
       propertyPath: m_Name
       value: Block_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 3bb751338bd6eaf4183126979baaff73, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3bb751338bd6eaf4183126979baaff73, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12551,6 +12612,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroy_Pillar_0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: c77d310d990099e42899d285a1d0c717, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c77d310d990099e42899d285a1d0c717, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.774292
@@ -13058,6 +13123,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 990bdbd6225deef44b138d8861d7457c, type: 3}
       propertyPath: m_Name
       value: Destroy_Plate_7
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 990bdbd6225deef44b138d8861d7457c, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 990bdbd6225deef44b138d8861d7457c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13713,6 +13782,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: 70c6bdac21c615f46b4ef52573989248, type: 3}
       propertyPath: m_Name
       value: Destroy_Pillar_1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 70c6bdac21c615f46b4ef52573989248, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 70c6bdac21c615f46b4ef52573989248, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15044,6 +15117,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroy_Arch_0
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e9c50fdf555743b43afa3624a2ff0826, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e9c50fdf555743b43afa3624a2ff0826, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.5175476
@@ -15716,6 +15793,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroy_Arch_0 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e9c50fdf555743b43afa3624a2ff0826, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e9c50fdf555743b43afa3624a2ff0826, type: 3}
       propertyPath: m_LocalPosition.x
       value: 29.89215
@@ -15865,6 +15946,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: e02c68a9c84519440adbacc16069d546, type: 3}
       propertyPath: m_Name
       value: Destroy_Pillar_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: e02c68a9c84519440adbacc16069d546, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e02c68a9c84519440adbacc16069d546, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17730,6 +17815,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroy_Plate_1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0d2167f1695114c41b9200d8302e1720, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0d2167f1695114c41b9200d8302e1720, type: 3}
       propertyPath: m_LocalPosition.x
       value: 14.386932
@@ -18660,6 +18749,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroy_Plate_3
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: bd4c86a3f5fd37840a091236998bf01f, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bd4c86a3f5fd37840a091236998bf01f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.9375458
@@ -19079,6 +19172,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Destroy_Arch_1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ee475ed98e5db0c43870b1fc3827993a, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ee475ed98e5db0c43870b1fc3827993a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.172455
@@ -19365,6 +19462,10 @@ PrefabInstance:
     - target: {fileID: 100000, guid: b61a60c82c2ce0149af624ce55b611ac, type: 3}
       propertyPath: m_Name
       value: Stone_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: b61a60c82c2ce0149af624ce55b611ac, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b61a60c82c2ce0149af624ce55b611ac, type: 3}
       propertyPath: m_LocalPosition.x
