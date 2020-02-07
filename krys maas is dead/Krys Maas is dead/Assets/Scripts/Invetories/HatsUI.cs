@@ -33,7 +33,14 @@ public class HatsUI : MonoBehaviour
             if(i < inventory.items.Count)
             {
                 Debug.Log("Je regarde un slot");
-                hatSlots[i].addItem(inventory.items[i]);
+                if(hatSlots[i].item != null)
+                {
+                    Debug.Log("Ya déjà quelque chose ici pas malin !");
+                }
+                else
+                {
+                    hatSlots[i].addItem(inventory.items[i]);
+                }
             }
             else
             {

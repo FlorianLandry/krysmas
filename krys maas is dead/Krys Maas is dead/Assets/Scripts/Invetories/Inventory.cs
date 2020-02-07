@@ -55,7 +55,7 @@ public class Inventory : MonoBehaviour
             }
         } else if(item.type == "pants")
         {
-            if (onHatChangedCallback != null)
+            if (onPantsChangedCallback != null)
             {
                 onPantsChangedCallback.Invoke(item);
             }
@@ -79,7 +79,10 @@ public class Inventory : MonoBehaviour
         items.Remove(item);
         if (item.type == "pants")
         {
-
+            if (onPantsChangedCallback != null)
+            {
+                onPantsChangedCallback.Invoke(item);
+            }
         }
         else if (item.type == "hat")
         {
@@ -90,7 +93,10 @@ public class Inventory : MonoBehaviour
         }
         else
         {
-
+            if (onJacketChangedCallback != null)
+            {
+                onJacketChangedCallback.Invoke(item);
+            }
         }
         
     }

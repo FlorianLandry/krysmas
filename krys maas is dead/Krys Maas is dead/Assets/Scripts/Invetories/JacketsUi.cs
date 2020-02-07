@@ -35,7 +35,15 @@ public class JacketsUi : MonoBehaviour
             if (i < inventory.items.Count)
             {
                 Debug.Log("Je regarde un slot");
-                jacketSlots[i].addItem(inventory.items[i]);
+                if(jacketSlots[i].item != null)
+                {
+                    Debug.Log("ya deja qqchose ici bébête !");
+                }
+                else
+                {
+                    jacketSlots[i].addItem(inventory.items[i]);
+                }
+                
             }
             else
             {

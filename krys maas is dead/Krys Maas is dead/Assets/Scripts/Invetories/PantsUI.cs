@@ -35,7 +35,14 @@ public class PantsUI : MonoBehaviour
             if (i < inventory.items.Count)
             {
                 Debug.Log("Je regarde un slot");
-                pantsSlots[i].addItem(inventory.items[i]);
+                if(pantsSlots[i].item != null)
+                {
+                    Debug.Log("ya déjà quelque chose ici");
+                }
+                else
+                {
+                    pantsSlots[i].addItem(inventory.items[i]);
+                }
             }
             else
             {
