@@ -12,6 +12,7 @@ public class Inventory : MonoBehaviour
     public delegate void onPantsChanged(Item item);
     public onPantsChanged onPantsChangedCallback;
     public static Inventory instance;
+    public GameObject canvas;
     #region Singleton
 
 
@@ -23,7 +24,6 @@ public class Inventory : MonoBehaviour
             return;
         }
         instance = this;
-        GameObject canvas = GameObject.Find("Canvas");
         instance.onHatChangedCallback += canvas.GetComponent<HatsUI>().addToHatInventory;
         instance.onHatChangedCallback += canvas.GetComponent<HatsUI>().updateUI;
         instance.onJacketChangedCallback += canvas.GetComponent<JacketsUi>().addToJacketInventory;

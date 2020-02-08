@@ -17,7 +17,6 @@ public class JacketInventory : Inventory
             return;
         }
         instance = this;
-        GameObject canvas = GameObject.Find("Canvas");
         instance.onHatChangedCallback += canvas.GetComponent<HatsUI>().addToHatInventory;
         instance.onHatChangedCallback += canvas.GetComponent<HatsUI>().updateUI;
         instance.onJacketChangedCallback += canvas.GetComponent<JacketsUi>().addToJacketInventory;
