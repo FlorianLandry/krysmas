@@ -24,6 +24,16 @@ public class EquipJacket : MonoBehaviour
         GameObject.Find(equipedJacket.item.name).GetComponent<Renderer>().enabled = false;
         equipedJacket.clearSlot();
         equipedJacket.addItem(jacketToEquip.item);
+        if (equipedJacket.item.name != "VesteHiver")
+        {
+            GameObject.Find("TShirt").GetComponent<Renderer>().enabled = true;
+            GameObject.Find("Bras").GetComponent<Renderer>().enabled = false;
+        }
+        else
+        {
+            GameObject.Find("TShirt").GetComponent<Renderer>().enabled = false;
+            GameObject.Find("Bras").GetComponent<Renderer>().enabled = false;
+        }
         GameObject.Find(equipedJacket.item.name).GetComponent<Renderer>().enabled = true;
         jacketToEquip.clearSlot();
         jacketToEquip.addItem(tmpHat);
